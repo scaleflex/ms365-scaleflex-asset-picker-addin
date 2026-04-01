@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "assetDetail": {
+    "fields": [
+      { "key": "name",             "label": "Name",        "enabled": true,  "overflow_limit": 2, "allow_copy": true  },
+      { "key": "file_ext",         "label": "Format",      "enabled": true  },
+      { "key": "dimensions",       "label": "Dimensions",  "enabled": true  },
+      { "key": "size",             "label": "Size",        "enabled": true  },
+      { "key": "folder",           "label": "Folder",      "enabled": false },
+      { "key": "uuid",             "label": "UUID",        "enabled": false },
+      { "key": "type",             "label": "MIME type",   "enabled": true },
+      { "key": "meta_title",       "label": "Title",       "enabled": true,  "overflow_limit": 2,  "allow_copy": true  },
+      { "key": "meta_description", "label": "Description", "enabled": true,  "overflow_limit": 5,  "allow_copy": true  },
+      { "key": "tags",             "label": "Tags",        "enabled": true,  "overflow_limit": 3, "allow_copy": true  },
+      { "key": "owner",            "label": "Owner",       "enabled": false },
+      { "key": "created_at",      "label": "Created",     "enabled": false },
+      { "key": "modified_at",     "label": "Modified",    "enabled": false }
+    ]
+  }
+}

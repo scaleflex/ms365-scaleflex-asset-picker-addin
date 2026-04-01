@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>f9d830d6-3b80-4921-9c53-9f3cfb29a9a0</Id>
-  <Version>1.0.0.0</Version>
-  <ProviderName>Scaleflex DAM</ProviderName>
+  <Version>2.0.2</Version>
+  <ProviderName>Scaleflex</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="ScaleFlex DAM"/>
+  <DisplayName DefaultValue="Scaleflex DAM"/>
   <Description DefaultValue="Connect to your digital assets library. Search, preview, use or upload images. Export to the DAM."/>
   <IconUrl DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-64.png"/>
@@ -12,6 +12,7 @@
   <AppDomains>
     <AppDomain>https://oauth2.sfxconnector.com</AppDomain>
     <AppDomain>https://hub.scaleflex.com</AppDomain>
+    <AppDomain>https://localhost:3000</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Document"/>
@@ -26,34 +27,34 @@
       <Host xsi:type="Document">
         <DesktopFormFactor>
           <GetStarted>
-            <Title resid="GetStarted.Title"/>
-            <Description resid="GetStarted.Description"/>
-            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+            <Title resid="Word.GetStarted.Title"/>
+            <Description resid="Word.GetStarted.Description"/>
+            <LearnMoreUrl resid="Word.GetStarted.LearnMoreUrl"/>
           </GetStarted>
-          <FunctionFile resid="Commands.Url"/>
+          <FunctionFile resid="Word.Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+                <Label resid="Word.CommandsGroup.Label"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16x16"/>
-                  <bt:Image size="32" resid="Icon.32x32"/>
-                  <bt:Image size="80" resid="Icon.80x80"/>
+                  <bt:Image size="16" resid="Word.Icon.16x16"/>
+                  <bt:Image size="32" resid="Word.Icon.32x32"/>
+                  <bt:Image size="80" resid="Word.Icon.80x80"/>
                 </Icon>
                 <Control xsi:type="Button" id="TaskpaneButton">
-                  <Label resid="TaskpaneButton.Label"/>
+                  <Label resid="Word.TaskpaneButton.Label"/>
                   <Supertip>
-                    <Title resid="TaskpaneButton.Label"/>
-                    <Description resid="TaskpaneButton.Tooltip"/>
+                    <Title resid="Word.TaskpaneButton.Label"/>
+                    <Description resid="Word.TaskpaneButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
+                    <bt:Image size="16" resid="Word.Icon.16x16"/>
+                    <bt:Image size="32" resid="Word.Icon.32x32"/>
+                    <bt:Image size="80" resid="Word.Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ButtonId1</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
+                    <SourceLocation resid="Word.Taskpane.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -64,34 +65,34 @@
             <Host xsi:type="Presentation">
         <DesktopFormFactor>
           <GetStarted>
-            <Title resid="GetStarted.Title"/>
-            <Description resid="GetStarted.Description"/>
-            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+            <Title resid="PPT.GetStarted.Title"/>
+            <Description resid="PPT.GetStarted.Description"/>
+            <LearnMoreUrl resid="PPT.GetStarted.LearnMoreUrl"/>
           </GetStarted>
-          <FunctionFile resid="Commands.Url"/>
+          <FunctionFile resid="PPT.Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+                <Label resid="PPT.CommandsGroup.Label"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16x16"/>
-                  <bt:Image size="32" resid="Icon.32x32"/>
-                  <bt:Image size="80" resid="Icon.80x80"/>
+                  <bt:Image size="16" resid="PPT.Icon.16x16"/>
+                  <bt:Image size="32" resid="PPT.Icon.32x32"/>
+                  <bt:Image size="80" resid="PPT.Icon.80x80"/>
                 </Icon>
                 <Control xsi:type="Button" id="TaskpaneButton">
-                  <Label resid="TaskpaneButton.Label"/>
+                  <Label resid="PPT.TaskpaneButton.Label"/>
                   <Supertip>
-                    <Title resid="TaskpaneButton.Label"/>
-                    <Description resid="TaskpaneButton.Tooltip"/>
+                    <Title resid="PPT.TaskpaneButton.Label"/>
+                    <Description resid="PPT.TaskpaneButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
+                    <bt:Image size="16" resid="PPT.Icon.16x16"/>
+                    <bt:Image size="32" resid="PPT.Icon.32x32"/>
+                    <bt:Image size="80" resid="PPT.Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ButtonId1</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
+                    <SourceLocation resid="PPT.Taskpane.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -102,23 +103,34 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-80.png"/>
+        <bt:Image id="Word.Icon.16x16" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-16.png"/>
+        <bt:Image id="Word.Icon.32x32" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-32.png"/>
+        <bt:Image id="Word.Icon.80x80" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-80.png"/>
+        <bt:Image id="PPT.Icon.16x16" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-16.png"/>
+        <bt:Image id="PPT.Icon.32x32" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-32.png"/>
+        <bt:Image id="PPT.Icon.80x80" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/taskpane.html"/>
+        <bt:Url id="Word.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Word.Commands.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/commands.html"/>
+        <bt:Url id="Word.Taskpane.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/taskpane.html"/>
+        <bt:Url id="PPT.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="PPT.Commands.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/commands.html"/>
+        <bt:Url id="PPT.Taskpane.Url" DefaultValue="https://oauth2.sfxconnector.com/ms365-client/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Connected to Scaleflex DAM"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Add-in"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Scaleflex DAM"/>
+        <bt:String id="Word.GetStarted.Title" DefaultValue="Connected to Scaleflex DAM"/>
+        <bt:String id="Word.CommandsGroup.Label" DefaultValue="Add-in"/>
+        <bt:String id="Word.TaskpaneButton.Label" DefaultValue="Scaleflex DAM"/>
+        <bt:String id="PPT.GetStarted.Title" DefaultValue="Connected to Scaleflex DAM"/>
+        <bt:String id="PPT.CommandsGroup.Label" DefaultValue="Add-in"/>
+        <bt:String id="PPT.TaskpaneButton.Label" DefaultValue="Scaleflex DAM"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Browse and insert images from your library to enrich your presentation."/>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Scaleflex DAM asset library"/>
+        <bt:String id="Word.GetStarted.Description" DefaultValue="Browse and insert images from your library to enrich your document."/>
+        <bt:String id="Word.TaskpaneButton.Tooltip" DefaultValue="Click to open the Scaleflex DAM asset library"/>
+        <bt:String id="PPT.GetStarted.Description" DefaultValue="Browse and insert images from your library to enrich your presentation."/>
+        <bt:String id="PPT.TaskpaneButton.Tooltip" DefaultValue="Click to open the Scaleflex DAM asset library"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
